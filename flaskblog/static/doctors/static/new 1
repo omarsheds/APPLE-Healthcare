@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title> File uploading</title>
+ </head>
+ 
+ <body>
+ 
+ <form method="post" enctype="multipart/form-data">
+ <label>Title</label>
+ <input type="text" name="title">
+ <label> File Upload</label>
+ <input type="File" name="file">
+ <input type="submit" name="submit">
+
+</form>
+</body>
+</html> 

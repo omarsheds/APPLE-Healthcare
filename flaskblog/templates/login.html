@@ -1,0 +1,107 @@
+{% extends "layout.html" %}
+{% block content %}
+<style id="applicationStylesheet" type="text/css">
+	#LOGIN_bg {
+		position: relative;
+		width: 195px;
+		height: 40px;
+		
+		overflow: visible;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Home_2.html;
+		cursor: pointer;
+	}
+	.LOGIN_RECTANGLE {
+		position: absolute;
+		overflow: visible;
+		width: 195px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+	}
+	#BOOK_NOW {
+		position: absolute;
+		left: 19px;
+		top: -2px;
+		overflow: visible;
+		width: 159px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+</style>
+    <div style="top: 200px; left:420px;" style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;"  class="col-md-4">
+        <form  method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                <span style=" right: -90px;font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;" >Log In</span>
+                <div style="font-family: Coves-Bold;color: white;font-weight: bold;"  class="form-group">
+                    {{ form.email.label(class="form-control-label") }}
+                    {% if form.email.errors %}
+                        {{ form.email(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.email.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.email(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div  style="font-family: Coves-Bold;color: white;font-weight: bold;"  class="form-group">
+                    {{ form.password.label(class="form-control-label") }}
+                    {% if form.password.errors %}
+                        {{ form.password(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.password.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.password(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div style="font-family: Coves-Bold;color: white;font-weight: bold;"  class="form-check">
+                    {{ form.remember(class="form-check-input") }}
+                    {{ form.remember.label(class="form-check-label") }}
+                </div>
+				<br>
+				<button style="background: transparent;border: none;"type="submit"><div  id="LOGIN_bg">
+		<svg class="LOGIN_RECTANGLE">
+			<rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="2px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="LOGIN_RECTANGLE" rx="20" ry="20" x="0" y="0" width="195" height="40">
+			</rect>
+		</svg>
+		<div id="BOOK_NOW">
+			<span>Login</span>
+		</div>
+	</div></button>
+            </fieldset>
+			
+            
+                <a href="#">Forgot Password?</a>
+              <div style="font-family: Coves-Bold;font-weight: bold;color: white;">
+        <small>
+            Don't have an account? <a class="ml-2"  href="{{ url_for('register') }}">Sign Up Now</a>
+        </small>
+    </div>
+	  <div style="font-family: Coves-Bold;font-weight: bold;color: white;">
+       <small>
+            Are you a doctor? <a class="ml-2"  href="{{ url_for('loginDoc') }}">Login as a Doctor Here!</a>
+        </small>
+    </div>
+		
+        </form>
+ 
+		
+    </div>
+
+
+	
+	
+	
+{% endblock content %}

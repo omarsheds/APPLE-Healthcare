@@ -1,0 +1,578 @@
+
+{% extends "layoutDoc.html" %}
+{% block content %}
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: MEDICAL PARTNERS – 1;
+		--web-view-id: MEDICAL_PARTNERS___1;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: MEDICAL_PARTNERS___1;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#MEDICAL_PARTNERS___1 {
+		position: absolute;
+		width: 1366px;
+		height: 1108px;
+		background-color: rgba(0,0,0,0);
+		overflow: hidden;
+		--web-view-name: MEDICAL PARTNERS – 1;
+		--web-view-id: MEDICAL_PARTNERS___1;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#BACKGROUND2 {
+		position: absolute;
+		width: 1992px;
+		height: 1120px;
+		left: -313px;
+		top: 0px;
+		overflow: visible;
+	}
+	#MEDICAL {
+		position: absolute;
+		left: 552.781px;
+		top: 194.053px;
+		overflow: visible;
+		width: 261px;
+		white-space: nowrap;
+		line-height: 76.14447784423828px;
+		margin-top: -6.345373153686523px;
+		text-align: left;
+		font-family: Coves-Bold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 63.453731536865234px;
+		color: rgba(255,255,255,1);
+	}
+	#FIRST_DR {
+		position: absolute;
+		width: 551px;
+		height: 213px;
+		left: 96px;
+		top: 370px;
+		overflow: visible;
+	}
+	#EDEN__HEATHCARE {
+		position: absolute;
+		left: 246px;
+		top: 0px;
+		overflow: visible;
+		width: 141px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		color: rgba(255,255,255,1);
+	}
+	.Line_1 {
+		overflow: visible;
+		position: absolute;
+		width: 236.406px;
+		height: 1px;
+		left: 244.762px;
+		top: 65.693px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#location {
+		position: absolute;
+		width: 26px;
+		height: 39px;
+		left: 246px;
+		top: 93px;
+		overflow: visible;
+	}
+	#icons_1831922 {
+		position: absolute;
+		width: 26px;
+		height: 39px;
+		left: 246px;
+		top: 133px;
+		overflow: visible;
+	}
+	#percent {
+		position: absolute;
+		width: 26px;
+		height: 38px;
+		left: 246px;
+		top: 175px;
+		overflow: visible;
+	}
+	#ID6_OCTOBER_CITY__MEHWAR_EL_MA {
+		position: absolute;
+		left: 287px;
+		top: 98px;
+		overflow: visible;
+		width: 265px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+	}
+	#ID02_38244755 {
+		position: absolute;
+		left: 287px;
+		top: 138px;
+		overflow: visible;
+		width: 105px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		color: rgba(255,255,255,1);
+	}
+	#ID15_ {
+		position: absolute;
+		left: 287px;
+		top: 178px;
+		overflow: visible;
+		width: 28px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#male_dr {
+		position: absolute;
+		width: 193px;
+		height: 193px;
+		left: 0px;
+		top: 12px;
+		overflow: visible;
+	}
+	#SECOND_DR {
+		position: absolute;
+		width: 481.167px;
+		height: 214px;
+		left: 789px;
+		top: 369px;
+		overflow: visible;
+	}
+	#ALBORG__LABORATORIES {
+		position: absolute;
+		left: 252px;
+		top: 0px;
+		overflow: visible;
+		width: 180px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		color: rgba(255,255,255,1);
+	}
+	.Line_1_bh {
+		overflow: visible;
+		position: absolute;
+		width: 236.406px;
+		height: 1px;
+		left: 244.762px;
+		top: 66.693px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#location_bi {
+		position: absolute;
+		width: 26px;
+		height: 39px;
+		left: 246px;
+		top: 94px;
+		overflow: visible;
+	}
+	#icons_1831922_bj {
+		position: absolute;
+		width: 26px;
+		height: 39px;
+		left: 246px;
+		top: 134px;
+		overflow: visible;
+	}
+	#percent_bk {
+		position: absolute;
+		width: 26px;
+		height: 38px;
+		left: 246px;
+		top: 176px;
+		overflow: visible;
+	}
+	#MULTIPLE_LOCATIONS {
+		position: absolute;
+		left: 287px;
+		top: 99px;
+		overflow: visible;
+		width: 151px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+	}
+	#ID19111 {
+		position: absolute;
+		left: 287px;
+		top: 137px;
+		overflow: visible;
+		width: 37px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#ID20_ {
+		position: absolute;
+		left: 287px;
+		top: 181px;
+		overflow: visible;
+		width: 34px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		color: rgba(255,255,255,1);
+	}
+	#AL_BORG {
+		position: absolute;
+		width: 193px;
+		height: 193px;
+		left: 0px;
+		top: 13px;
+		overflow: visible;
+	}
+	#FOURTH_DR {
+		position: absolute;
+		width: 481.167px;
+		height: 207px;
+		left: 789px;
+		top: 710px;
+		overflow: visible;
+	}
+	#ALSAFWA_HOSPITAL {
+		position: absolute;
+		left: 246px;
+		top: 0px;
+		overflow: visible;
+		width: 115px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		color: rgba(255,255,255,1);
+	}
+	.Line_1_br {
+		overflow: visible;
+		position: absolute;
+		width: 236.406px;
+		height: 1px;
+		left: 244.762px;
+		top: 59.693px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#location_bs {
+		position: absolute;
+		width: 26px;
+		height: 39px;
+		left: 246px;
+		top: 87px;
+		overflow: visible;
+	}
+	#icons_1831922_bt {
+		position: absolute;
+		width: 26px;
+		height: 39px;
+		left: 246px;
+		top: 127px;
+		overflow: visible;
+	}
+	#percent_bu {
+		position: absolute;
+		width: 26px;
+		height: 38px;
+		left: 246px;
+		top: 169px;
+		overflow: visible;
+	}
+	#ID6_OCTOBER__FIRST_DISTICT {
+		position: absolute;
+		left: 287px;
+		top: 92px;
+		overflow: visible;
+		width: 179px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+	}
+	#ID02_38372266 {
+		position: absolute;
+		left: 287px;
+		top: 132px;
+		overflow: visible;
+		width: 104px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 18px;
+		color: rgba(255,255,255,1);
+	}
+	#ID10_ {
+		position: absolute;
+		left: 287px;
+		top: 172px;
+		overflow: visible;
+		width: 34px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#safwa {
+		position: absolute;
+		width: 193px;
+		height: 193px;
+		left: 0px;
+		top: 6px;
+		overflow: visible;
+	}
+	#THIRD_DR {
+		position: absolute;
+		width: 481.167px;
+		height: 207px;
+		left: 96px;
+		top: 710px;
+		overflow: visible;
+	}
+	#ALFA__LABORATORIES {
+		position: absolute;
+		left: 245px;
+		top: 0px;
+		overflow: visible;
+		width: 187px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 25px;
+		color: rgba(255,255,255,1);
+	}
+	.Line_1_b {
+		overflow: visible;
+		position: absolute;
+		width: 236.406px;
+		height: 1px;
+		left: 244.762px;
+		top: 59.693px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#location_b {
+		position: absolute;
+		width: 26px;
+		height: 39px;
+		left: 246px;
+		top: 87px;
+		overflow: visible;
+	}
+	#icons_1831922_b {
+		position: absolute;
+		width: 26px;
+		height: 39px;
+		left: 246px;
+		top: 127px;
+		overflow: visible;
+	}
+	#percent_b {
+		position: absolute;
+		width: 26px;
+		height: 38px;
+		left: 246px;
+		top: 169px;
+		overflow: visible;
+	}
+	#MULTIPLE_LOCATIONS_b {
+		position: absolute;
+		left: 287px;
+		top: 92px;
+		overflow: visible;
+		width: 151px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		color: rgba(255,255,255,1);
+	}
+	#ID16191 {
+		position: absolute;
+		left: 287px;
+		top: 130px;
+		overflow: visible;
+		width: 42px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#ID20__b {
+		position: absolute;
+		left: 287px;
+		top: 172px;
+		overflow: visible;
+		width: 38px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#ALFA {
+		position: absolute;
+		width: 193px;
+		height: 193px;
+		left: 0px;
+		top: 6px;
+		overflow: visible;
+	}
+	.Line_2 {
+		display: none;
+		overflow: visible;
+		position: absolute;
+		width: 1px;
+		height: 564px;
+		left: 683.5px;
+		top: 327.5px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+</style>
+  
+	<img id="BACKGROUND2" src="static/BACKGROUND2.png" >
+	<div id="MEDICAL">
+		<span>MEDICAL</span>
+	</div>
+	<div id="FIRST_DR">
+		<div id="EDEN__HEATHCARE">
+			<span>EDEN <br/>HEATHCARE</span>
+		</div>
+	
+		<img id="location" src="static/location.png" >
+		<img id="icons_1831922" src="static/icons_1831922.png" >
+		<img id="percent" src="static/percent.png">
+		<div id="ID6_OCTOBER_CITY__MEHWAR_EL_MA">
+			<span>6 OCTOBER CITY, MEHWAR EL MARKAZI</span>
+		</div>
+		<div id="ID02_38244755">
+			<span>02 38244755</span>
+		</div>
+		<div id="ID15_">
+			<span>15%</span>
+		</div>
+		<img id="male_dr" src="static/male_dr.png" >
+	</div>
+	<div id="SECOND_DR">
+		<div id="ALBORG__LABORATORIES">
+			<span>ALBORG <br/>LABORATORIES</span>
+		</div>
+		
+		<img id="location_bi" src="static/location_bi.png" >
+		<img id="icons_1831922_bj" src="static/icons_1831922_bj.png" >
+		<img id="percent_bk" src="static/percent_bk.png" >
+		<div id="MULTIPLE_LOCATIONS">
+			<span>MULTIPLE LOCATIONS</span>
+		</div>
+		<div id="ID19111">
+			<span>19111</span>
+		</div>
+		<div id="ID20_">
+			<span>20%</span>
+		</div>
+		<img id="AL_BORG" src="static/AL_BORG.png">
+	</div>
+	<div id="FOURTH_DR">
+		<div id="ALSAFWA_HOSPITAL">
+			<span>ALSAFWA<br/>HOSPITAL</span>
+		</div>
+	
+		<img id="location_bs" src="static/location_bs.png" >
+		<img id="icons_1831922_bt" src="static/icons_1831922_bt.png" >
+		<img id="percent_bu" src="static/percent_bu.png" >
+		<div id="ID6_OCTOBER__FIRST_DISTICT">
+			<span>6 OCTOBER, FIRST DISTICT</span>
+		</div>
+		<div id="ID02_38372266">
+			<span>02 38372266</span>
+		</div>
+		<div id="ID10_">
+			<span>10%</span>
+		</div>
+		<img id="safwa" src="static/safwa.png" >
+	</div>
+	<div id="THIRD_DR">
+		<div id="ALFA__LABORATORIES">
+			<span>ALFA<br/> LABORATORIES</span>
+		</div>
+		
+		<img id="location_b" src="static/location_b.png" >
+		<img id="icons_1831922_b" src="static/icons_1831922_b.png" >
+		<img id="percent_b" src="static/percent_b.png" >
+		<div id="MULTIPLE_LOCATIONS_b">
+			<span>MULTIPLE LOCATIONS</span>
+		</div>
+		<div id="ID16191">
+			<span>16191</span>
+		</div>
+		<div id="ID20__b">
+			<span>20%</span>
+		</div>
+		<img id="ALFA" src="static/ALFA.png" >
+	</div>
+
+{% endblock content %}

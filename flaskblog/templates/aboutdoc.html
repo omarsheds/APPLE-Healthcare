@@ -1,0 +1,98 @@
+{% extends "layoutDoc.html" %}
+{% block content %}
+   <style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: HIGH RISK – 1;
+		--web-view-id: HIGH_RISK___1;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: HIGH_RISK___1;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#HIGH_RISK___1 {
+		position: absolute;
+		width: 1366px;
+		height: 768px;
+		background-color: rgba(0,0,0,0);
+		overflow: hidden;
+		--web-view-name: HIGH RISK – 1;
+		--web-view-id: HIGH_RISK___1;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#about_us2 {
+		position: absolute;
+		width: 1366px;
+		height: 768px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#ABOUT_US1 {
+		position: absolute;
+		left: 532.781px;
+		top: 194.053px;
+		overflow: visible;
+		width: 301px;
+		white-space: nowrap;
+		line-height: 76.14447784423828px;
+		margin-top: -6.345373153686523px;
+		text-align: left;
+		font-family: Coves-Bold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 63.453731536865234px;
+		color: rgba(255,255,255,1);
+	}
+
+	#about_us2_mi {
+		position: absolute;
+		width: 532px;
+		height: 495px;
+		left: 870px;
+		top: 348px;
+		overflow: visible;
+	}
+	#The_Healthcare_system_can_pred {
+		position: absolute;
+		left: 42px;
+		top: 330px;
+		overflow: visible;
+		width: 681px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+</style>
+<div id="HIGH_RISK___1">
+	<img id="about_us2" src="static/about_us2.png" >
+	<div id="ABOUT_US1">
+		<span>ABOUT US</span>
+	</div>
+		<img id="about_us2_mi" src="static/about_us2_mi.png" >
+	<div id="The_Healthcare_system_can_pred">
+		<span>Our Healthcare system can predict the chance of having <br/>Coronary Heart disease in the future by entering some symptoms<br/>(such as heart rate, age, gender, etc.). After the user inputs <br/>these symptoms, the processing stage starts using<br/>our prediction AI model that its accuracy level reaches 95%.<br/>Despite the fact that the accuracy in such a critical model<br/>should determine the certainty of having such a disease<br/>or not, the model is kept training continuously from the <br/>data collected from all hospitals and clinics to improve<br/> these numbers.</span>
+	</div>
+</div>
+{% endblock content %}

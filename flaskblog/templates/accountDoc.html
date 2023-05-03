@@ -1,0 +1,89 @@
+{% extends "layoutDoc.html" %}
+{% block content %}
+    <div style="top: 200px; left:420px;" style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;"  class="col-md-5">
+      <legend  style="font-family: Coves-Bold;font-weight: bold; font-size: 35px; color: #1d807d;top: -10px;" >Update Account Info</legend>
+	  <div class="media">
+        <img class="rounded-circle account-img" src="{{ image_file }}">
+        <div class="media-body">
+          <h2  style="font-family: Coves-Bold;font-weight: bold; font-size: 35px;color: #1d807d;" class="account-heading">{{ current_user.name }}</h2>
+          <small  style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: #1d807d;" >{{ current_user.email }}</small>
+        </div>
+      </div>
+	  
+        <form method="POST" action="" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                
+				
+				<div  style="font-family: Coves-Bold;font-weight: bold; font-size: 22px;color: #1d807d;" class="form-group">
+                    {{ form.name.label(class="form-control-label") }}
+
+                    {% if form.name.errors %}
+                        {{ form.name(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.name.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.name(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+				
+                <div  style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: #1d807d;" class="form-group">
+                    {{ form.username.label(class="form-control-label") }}
+
+                    {% if form.username.errors %}
+                        {{ form.username(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.username.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.username(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div  style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: #1d807d;" class="form-group">
+                    {{ form.email.label(class="form-control-label") }}
+                    {% if form.email.errors %}
+                        {{ form.email(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.email.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.email(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+				 <div  style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: #1d807d;" class="form-group">
+                    {{ form.number.label(class="form-control-label") }}
+
+                    {% if form.number.errors %}
+                        {{ form.number(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.number.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.number(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div  style="font-family: Coves-Bold;font-weight: bold; font-size: 22px;color: #1d807d;" class="form-group">
+                    {{ form.picture.label() }}
+                    {{ form.picture(class="form-control-file") }}
+                    {% if form.picture.errors %}
+                        {% for error in form.picture.errors %}
+                            <span class="text-danger">{{ error }}</span></br>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+            </fieldset>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+        </form>
+    </div>
+{% endblock content %}

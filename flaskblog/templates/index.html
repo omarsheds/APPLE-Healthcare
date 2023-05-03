@@ -1,0 +1,266 @@
+  
+{% extends "layout.html" %}
+{% block content %}
+<style id="applicationStylesheet" type="text/css">
+	#LOGIN_bg {
+		position: relative;
+		width: 195px;
+		height: 40px;
+		
+		overflow: visible;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Home_2.html;
+		cursor: pointer;
+	}
+	.LOGIN_RECTANGLE {
+		position: absolute;
+		overflow: visible;
+		width: 195px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+	}
+	#BOOK_NOW {
+		position: absolute;
+		left: 19px;
+		top: -2px;
+		overflow: visible;
+		width: 159px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+</style>
+
+
+   <div style="top: 200px; left:200px;" style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;" class="col-md-10">
+   
+   
+	<h3 style="font-family: Coves-Bold;font-weight: bold; font-size: 40px; color: white;" >Future Coronary Heart Disease Prediction Test</h3> 
+	
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+			 <div style="float: left;" style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;"  class="col-md-4">       
+           
+                <div style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;" class="form-group">
+                    {{ form.male.label(class="form-control-label") }}
+
+                    {% if form.male.errors %}
+                        {{ form.male(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.username.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.male(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;" class="form-group">
+                    {{ form.age.label(class="form-control-label") }}
+                    {% if form.age.errors %}
+                        {{ form.age(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.age.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.age(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;" class="form-group">
+                    {{ form.education.label(class="form-control-label") }}
+                    {% if form.education.errors %}
+                        {{ form.education(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.education.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.education(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;" class="form-group">
+                    {{ form.smoker.label(class="form-control-label") }}
+                    {% if form.smoker.errors %}
+                        {{ form.smoker(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.smoker.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.smoker(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+				<div style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;" class="form-group">
+                    {{ form.cigs.label(class="form-control-label") }}
+                    {% if form.cigs.errors %}
+                        {{ form.cigs(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.cigs.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.cigs(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+				<div style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;" class="form-group">
+                    {{ form.bpmeds.label(class="form-control-label") }}
+                    {% if form.bpmeds.errors %}
+                        {{ form.bpmeds(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.bpmeds.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.bpmeds(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+				<div style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;" class="form-group">
+                    {{ form.prestr.label(class="form-control-label") }}
+                    {% if form.prestr.errors %}
+                        {{ form.prestr(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.prestr.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.prestr(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+				<br> <br>
+		<button style="background: transparent;border: none;"type="submit"><div  id="LOGIN_bg">
+		<svg class="LOGIN_RECTANGLE">
+			<rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="2px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="LOGIN_RECTANGLE" rx="20" ry="20" x="0" y="0" width="195" height="40">
+			</rect>
+		</svg>
+		<div id="BOOK_NOW">
+			<span>Check</span>
+		</div>
+	</div></button>	
+				</div>
+				 <div style="float: left;" style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;"  class="col-md-4">       
+				<div style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;" class="form-group">
+                    {{ form.prehyp.label(class="form-control-label") }}
+                    {% if form.prehyp.errors %}
+                        {{ form.prehyp(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.prehyp.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.prehyp(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+				<div style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;" class="form-group">
+                    {{ form.diabetes.label(class="form-control-label") }}
+                    {% if form.diabetes.errors %}
+                        {{ form.diabetes(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.diabetes.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.diabetes(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+				<div style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;" class="form-group">
+                    {{ form.totChol.label(class="form-control-label") }}
+                    {% if form.totChol.errors %}
+                        {{ form.totChol(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.totChol.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.totChol(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+				<div style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;" class="form-group">
+                    {{ form.sysBP.label(class="form-control-label") }}
+                    {% if form.sysBP.errors %}
+                        {{ form.sysBP(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.sysBP.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.sysBP(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+				<div style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;" class="form-group">
+                    {{ form.diaBP.label(class="form-control-label") }}
+                    {% if form.diaBP.errors %}
+                        {{ form.diaBP(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.diaBP.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.diaBP(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+				<div style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;" class="form-group">
+                    {{ form.BMI.label(class="form-control-label") }}
+                    {% if form.BMI.errors %}
+                        {{ form.BMI(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.BMI.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.BMI(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+				<div style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;" class="form-group">
+                    {{ form.heartRate.label(class="form-control-label") }}
+                    {% if form.heartRate.errors %}
+                        {{ form.heartRate(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.heartRate.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.heartRate(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+				<div style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;" class="form-group">
+                    {{ form.glucose.label(class="form-control-label") }}
+                    {% if form.glucose.errors %}
+                        {{ form.glucose(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.glucose.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.glucose(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+				 </div>  
+			 
+            </fieldset>
+           
+        </form>
+    </div>
+
+{% endblock content %}

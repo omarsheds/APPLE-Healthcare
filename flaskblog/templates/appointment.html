@@ -1,0 +1,79 @@
+{% extends "layout.html" %}
+{% block content %}
+<style id="applicationStylesheet" type="text/css">
+#HIGH_RISK {
+		position: absolute;
+		width: 1366px;
+		height: 768px;
+		background-color: rgba(0,0,0,0);
+		overflow: hidden;
+		--web-view-name: HIGH RISK;
+		--web-view-id: HIGH_RISK;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#BACKGROUND2 {
+		position: absolute;
+		width: 1366px;
+		height: 768px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+		background-color: #1d807d;
+	}
+	</style>
+ 
+    <div id="BACKGROUND2">
+	<div style="top: 200px; left:420px;" class="col-md-4">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                <legend style="font-family: Coves-Bold;font-weight: bold; font-size: 35px; color: white;">Booking an appointment with Dr. {{ user.name }}</legend>
+                <div style="font-family: Coves-Bold;font-weight: bold;  color: white;" class="form-group">
+                    {{ form.date.label(class="form-control-label") }}
+
+                    {% if form.date.errors %}
+                        {{ form.date(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.date.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.date(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                
+                <div style="font-family: Coves-Bold;font-weight: bold;  color: white;" class="form-group">
+                    {{ form.code.label(class="form-control-label") }}
+                    {% if form.code.errors %}
+                        {{ form.code(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.code.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.code(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+            
+            </fieldset>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+        </form>
+		</div>
+		</div>
+   
+{% endblock content %}

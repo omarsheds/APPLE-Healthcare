@@ -1,0 +1,21 @@
+.mediaViewInfo {
+	--web-view-name: LOGIN;
+	--web-view-id: LOGIN;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: LOGIN;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#LOGIN {
+	position: fixed;
+	background-color: rgba(0,0,0,0);
+	overflow: hidden;
+
+}

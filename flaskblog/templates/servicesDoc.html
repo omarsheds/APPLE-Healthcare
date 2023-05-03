@@ -1,0 +1,176 @@
+{% extends "layoutDoc.html" %}
+{% block content %}
+<style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: HEALTHCARE SERVICES;
+		--web-view-id: HEALTHCARE_SERVICES;
+		
+	}
+	:root {
+		--web-view-ids: HEALTHCARE_SERVICES;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	
+	#backup_new1 {
+	
+	
+	
+		size: cover;
+		position: center;
+		margin: 0;
+        padding: 0;
+		
+	}
+	#MEDICAL_TEST {
+		position: absolute;
+		width: 362px;
+		height: 362px;
+		left: 277px;
+		top: 322px;
+		overflow: visible;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: MEDICAL_TEST.html;
+		cursor: pointer;
+	}
+	#Ellipse_1 {
+		opacity: 0.72;
+	}
+	.Ellipse_1 {
+		position: absolute;
+		overflow: visible;
+		width: 362px;
+		height: 362px;
+		left: 0px;
+		top: 0px;
+	}
+	#FAVPNG_medical_diagnosis_physi {
+		position: absolute;
+		width: 131px;
+		height: 196px;
+		left: 114px;
+		top: 99px;
+		overflow: visible;
+	}
+	#MEDICAL_TEST_d {
+		position: absolute;
+		left: 117.522px;
+		top: 66.832px;
+		overflow: visible;
+		width: 131px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Coves-Bold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(0,0,0,1);
+	}
+	#MEDICAL_REOCRD {
+		position: absolute;
+		width: 362px;
+		height: 362px;
+		left: 727px;
+		top: 322px;
+		overflow: visible;
+	}
+	#Ellipse_2 {
+		opacity: 0.53;
+	}
+	.Ellipse_2 {
+		position: absolute;
+		overflow: visible;
+		width: 362px;
+		height: 362px;
+		left: 0px;
+		top: 0px;
+	}
+	#MEDICAL_RECORD {
+		position: absolute;
+		left: 98.349px;
+		top: 63.385px;
+		overflow: hidden;
+		width: 166px;
+		white-space: nowrap;
+		line-height: 24px;
+		margin-top: -2px;
+		text-align: left;
+		font-family: Coves-Bold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 20px;
+		color: rgba(255,255,255,1);
+	}
+	#FAVPNG_medicine_medical_record {
+		position: absolute;
+		width: 133px;
+		height: 185px;
+		left: 116px;
+		top: 113px;
+		overflow: visible;
+	}
+	#HEALTHCARE_SERVICES_ed {
+		position: absolute;
+		left: 345.781px;
+		top: 194.053px;
+		overflow: visible;
+		width: 674px;
+		white-space: nowrap;
+		line-height: 76.14447784423828px;
+		margin-top: -6.345373153686523px;
+		text-align: left;
+		font-family: Coves-Bold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 63.453731536865234px;
+		color: rgba(255,255,255,1);
+
+	#HEALTHCARE_SERVICES_eg {
+		position: absolute;
+		left: 717px;
+		top: 41px;
+		overflow: visible;
+		width: 266px;
+		white-space: nowrap;
+		line-height: 30.000001907348633px;
+		margin-top: -2.5000009536743164px;
+		text-align: left;
+		font-family: Coves-Bold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 25px;
+		color: rgba(255,255,255,1);
+	}
+
+</style>
+
+	<a href="{{ url_for('checkTest') }}"><div id="MEDICAL_TEST">
+		<svg class="Ellipse_1">
+			<ellipse fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Ellipse_1" rx="181" ry="181" cx="181" cy="181">
+			</ellipse>
+		</svg>
+		<img id="FAVPNG_medical_diagnosis_physi" src="static/FAVPNG_medical_diagnosis_physi.png">
+		<div id="MEDICAL_TEST_d">
+			<span>CHECK USER TEST</span>
+		</div>
+	</div></a>
+	
+	<a href="{{ url_for('checkMedical') }}"><div id="MEDICAL_REOCRD">
+		<svg class="Ellipse_2">
+			<ellipse fill="rgba(0,0,0,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Ellipse_2" rx="181" ry="181" cx="181" cy="181">
+			</ellipse>
+		</svg>
+		<div id="MEDICAL_RECORD">
+			<span>CHECK MEDICAL HISTORY</span>
+		</div>
+		<img id="FAVPNG_medicine_medical_record" src="static/FAVPNG_medicine_medical_record.png">
+	</div></a>
+	<div style="color: #1d807d;"id="HEALTHCARE_SERVICES_ed">
+		<span>HEALTHCARE SERVICES</span>
+	</div>
+{% endblock content %}

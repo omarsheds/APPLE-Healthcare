@@ -1,0 +1,49 @@
+{% extends "layoutDoc.html" %}
+{% block content %}
+<html> 
+<body> 
+	
+
+     <div style="top: 200px; left:420px;" style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;"  class="col-md-4">
+       <h3>Check Patient Medical History</h3> 
+	   <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+              
+                <div style="font-family: Coves-Bold;font-weight: bold;color: #1d807d;" class="form-group">
+                    {{ form.patient.label(class="form-control-label") }}
+
+                    {% if form.patient.errors %}
+                        {{ form.patient(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.patient.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.patient(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+           <div style="font-family: Coves-Bold;font-weight: bold;color: #1d807d;"class="form-group">
+                    {{ form.code.label(class="form-control-label") }}
+
+                    {% if form.code.errors %}
+                        {{ form.code(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.code.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.code(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+            </fieldset>
+            <div class="form-group">
+                {{ form.submit(class="btn btn-outline-info") }}
+            </div>
+        </form>
+    </div>
+    
+ 
+{% endblock content %}

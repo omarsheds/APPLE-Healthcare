@@ -1,0 +1,52 @@
+  
+{% extends "layoutDoc.html" %}
+{% block content %}
+
+     <div style="top: 200px; left:300px;font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: #1d807d;float: left;"  class="col-md-4">
+        <h3 >User's Last Heart Disease Check</h3>
+		<p style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: #1d807d;" > Gender: <b>{{one}}</b> </p>
+		<p style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: #1d807d;" >Age (in years): <b>{{two}}</b></p>
+		<p style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: #1d807d;" >Education: <b>{{three}}</b> </p>
+		<p style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: #1d807d;" >Smoker: {{four}}  </p>
+		<p style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: #1d807d;" >Number Of Cigarettes per day: {{five}}</p>
+		<p style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: #1d807d;" >On Blood Pressure Meds: {{six}}  </p>
+		<p style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: #1d807d;" >Prevalent Stroke: {{seven}}   </p>
+		<p style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: #1d807d;" >Prevalent Hypertension: {{eight}} </p>
+		<p style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: #1d807d;" >Diabetes: {{nine}}  </p>
+		<p style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: #1d807d;" >Cholesterol Level (in mg/dL) :  {{ten}}</p>
+		<p style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: #1d807d;" >Systolic Blood Pressure:  {{eleven}}</p>
+		<p style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: #1d807d;" >Diastolic Blood Pressure: {{twelve}}</p>
+		<p style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: #1d807d;" >Body Mass Index: {{thirteen}}</p>
+		<p style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: #1d807d;" >Heart Rate ( in beats/Min): {{fourteen}}</p>
+		<p style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: #1d807d;" >Glucose Level (in mg/dL): {{fifteen}}</p>
+		<p style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: #1d807d;" >Prediction: {{sixteen[0]}} </p>
+		<br><br>
+		<a  href="{{ url_for('verify') }}"> <input class="btn btn-outline-info" type="submit" value="Verify"><a>
+		
+    </div>
+	
+            
+	  <div style="top: 200px; left:300px;font-family: Coves-Bold;font-weight: bold; font-size: 22px;float:left;"  class="col-md-8">
+        <br>
+		<p style="font-family: Coves-Bold;font-weight: bold; font-size: 22px;" > 1 = male, 0 = female</p>
+		<br><br>
+		<p style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; " > 1=Some High School, 2=High School, 3=Some College or Vocational School, 4=college</p>
+		
+		<p style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; " > 1 = Yes , 0 = No</p>
+		<br>
+		
+		<p style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; " > 1 = Yes , 0 = No</p>
+		
+		<p style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; " > 1 = Diagnosed , 0 = Non-Diagnosed</p>
+		
+		<p style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; " > 1 = Diagnosed , 0 = Non-Diagnosed</p>
+		
+		<p style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; " > 1 = Diagnosed , 0 = Non-Diagnosed</p>
+		<br><br><br><br><br><br><br><br><br>
+		<p style="font-family: Coves-Bold;font-weight: bold; font-size: 22px;" > 1= High risk of developing CHD in the future 2- Low risk</p>
+		
+    </div>
+	
+	
+    
+{% endblock content %}

@@ -1,0 +1,372 @@
+.mediaViewInfo {
+	--web-view-name: LOGIN;
+	--web-view-id: LOGIN;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+:root {
+	--web-view-ids: LOGIN;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#LOGIN {
+	position: absolute;
+	width: 1366px;
+	height: 768px;
+	background-color: rgba(0,0,0,0);
+	overflow: hidden;
+	--web-view-name: LOGIN;
+	--web-view-id: LOGIN;
+	--web-scale-on-resize: true;
+	--web-enable-deep-linking: true;
+}
+@keyframes fadein {
+
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+#backup_new1 {
+	position: absolute;
+	width: 1366px;
+	height: 768px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}
+#BODY {
+	position: absolute;
+	width: 481px;
+	height: 16px;
+	left: 439.3px;
+	top: 597.25px;
+	overflow: visible;
+}
+#LOGIN_AS_A_DOCTOR {
+	position: absolute;
+	left: 327px;
+	top: 0px;
+	overflow: visible;
+	width: 155px;
+	white-space: nowrap;
+	line-height: 25.720317840576172px;
+	margin-top: -4.860158920288086px;
+	text-align: left;
+	font-family: Coves-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(220,220,220,1);
+}
+#DON_T_HAVE_AN_ACCOUNT_ {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+	width: 204px;
+	white-space: nowrap;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: REGISTER.html;
+	cursor: pointer;
+	line-height: 25.720317840576172px;
+	margin-top: -4.860158920288086px;
+	text-align: left;
+	font-family: Coves-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	color: rgba(220,220,220,1);
+}
+#EMAIL {
+	position: absolute;
+	width: 489px;
+	height: 54px;
+	left: 439px;
+	top: 366px;
+	overflow: visible;
+}
+#EMAIL_RECTANGLE {
+	opacity: 0.55;
+}
+.EMAIL_RECTANGLE {
+	position: absolute;
+	overflow: visible;
+	width: 489px;
+	height: 54px;
+	left: 0px;
+	top: 0px;
+}
+#EMAIL_ADDRESS {
+	position: absolute;
+	left: 91.081px;
+	top: 12.144px;
+	overflow: visible;
+	width: 210px;
+	white-space: nowrap;
+	line-height: 34.936763763427734px;
+	margin-top: -2.9113969802856445px;
+	text-align: left;
+	font-family: Coves-Light;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 29.113969802856445px;
+	color: rgba(220,220,220,1);
+}
+#EMAIL_ICON {
+	position: absolute;
+	width: 35px;
+	height: 22px;
+	left: 27px;
+	top: 16px;
+	overflow: visible;
+}
+#PASSWORD {
+	position: absolute;
+	width: 489px;
+	height: 54px;
+	left: 439px;
+	top: 442px;
+	overflow: visible;
+}
+#PASSWORD_RECTANGLE {
+	opacity: 0.55;
+}
+.PASSWORD_RECTANGLE {
+	position: absolute;
+	overflow: visible;
+	width: 489px;
+	height: 54px;
+	left: 0px;
+	top: 0px;
+}
+#PASSWORD_bb {
+	position: absolute;
+	left: 91.081px;
+	top: 12.144px;
+	overflow: visible;
+	width: 149px;
+	white-space: nowrap;
+	line-height: 34.936763763427734px;
+	margin-top: -2.9113969802856445px;
+	text-align: left;
+	font-family: Coves-Light;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 29.113969802856445px;
+	color: rgba(220,220,220,1);
+}
+#PASSWORD_ICON {
+	position: absolute;
+	width: 30px;
+	height: 33px;
+	left: 27px;
+	top: 11px;
+	overflow: visible;
+}
+#HEADER {
+	position: absolute;
+	width: 1274.772px;
+	height: 199.053px;
+	left: 38.22px;
+	top: 61px;
+	overflow: visible;
+}
+#HOME {
+	position: absolute;
+	left: 598.78px;
+	top: 5px;
+	overflow: visible;
+	width: 71px;
+	white-space: nowrap;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Home.html;
+	cursor: pointer;
+	line-height: 30.000001907348633px;
+	margin-top: -2.5000009536743164px;
+	text-align: left;
+	font-family: Coves-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(255,255,255,1);
+}
+#HEALTHCARE_SERVICES {
+	position: absolute;
+	left: 702.78px;
+	top: 5px;
+	overflow: visible;
+	width: 266px;
+	white-space: nowrap;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: HEALTHCARE_SERVICES.html;
+	cursor: pointer;
+	line-height: 30.000001907348633px;
+	margin-top: -2.5000009536743164px;
+	text-align: left;
+	font-family: Coves-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(255,255,255,1);
+}
+.Shape_1_copy {
+	position: absolute;
+	overflow: visible;
+	width: 1px;
+	height: 35px;
+	left: 984.77px;
+	top: 0px;
+}
+.Shape_1_copy_3 {
+	position: absolute;
+	overflow: visible;
+	width: 1px;
+	height: 35px;
+	left: 685.13px;
+	top: 0px;
+}
+#PARTNERS {
+	position: absolute;
+	left: 1002.771px;
+	top: 5px;
+	overflow: visible;
+	width: 120px;
+	white-space: nowrap;
+	line-height: 30.000001907348633px;
+	margin-top: -2.5000009536743164px;
+	text-align: left;
+	font-family: Coves-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(255,255,255,1);
+}
+.Shape_1_copy_2 {
+	position: absolute;
+	overflow: visible;
+	width: 1px;
+	height: 35px;
+	left: 1138.77px;
+	top: 0px;
+}
+#REGISTER {
+	position: absolute;
+	left: 0px;
+	top: 5px;
+	overflow: visible;
+	width: 111px;
+	white-space: nowrap;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: REGISTER.html;
+	cursor: pointer;
+	line-height: 30.000001907348633px;
+	margin-top: -2.5000009536743164px;
+	text-align: left;
+	font-family: Coves-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(255,255,255,1);
+}
+#LOGIN_bl {
+	position: absolute;
+	left: 147.232px;
+	top: 5px;
+	overflow: visible;
+	width: 75px;
+	white-space: nowrap;
+	line-height: 30.000001907348633px;
+	margin-top: -2.5000009536743164px;
+	text-align: left;
+	font-family: Coves-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(255,255,255,1);
+}
+.Shape_1_copy_4 {
+	position: absolute;
+	overflow: visible;
+	width: 1px;
+	height: 35px;
+	left: 128.09px;
+	top: 0px;
+}
+#ABOUT_US {
+	position: absolute;
+	left: 1156.772px;
+	top: 5px;
+	overflow: visible;
+	width: 119px;
+	white-space: nowrap;
+	line-height: 30.000001907348633px;
+	margin-top: -2.5000009536743164px;
+	text-align: left;
+	font-family: Coves-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(255,255,255,1);
+}
+#LOGIN_bo {
+	position: absolute;
+	left: 556.972px;
+	top: 133.053px;
+	overflow: visible;
+	width: 189px;
+	white-space: nowrap;
+	line-height: 76.14447784423828px;
+	margin-top: -6.345373153686523px;
+	text-align: left;
+	font-family: Coves-Bold;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 63.453731536865234px;
+	color: rgba(255,255,255,1);
+}
+#LOGIN_bp {
+	position: absolute;
+	width: 489px;
+	height: 57px;
+	left: 439px;
+	top: 518px;
+	overflow: visible;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Home_2.html;
+	cursor: pointer;
+}
+.LOGIN_RECTANGLE {
+	position: absolute;
+	overflow: visible;
+	width: 489px;
+	height: 57px;
+	left: 0px;
+	top: 0px;
+}
+#LOGIN_br {
+	position: absolute;
+	left: 185.081px;
+	top: 7.144px;
+	overflow: visible;
+	width: 119px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Coves;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	color: rgba(255,255,255,1);
+}

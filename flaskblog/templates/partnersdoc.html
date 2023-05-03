@@ -1,0 +1,54 @@
+{% extends "layoutDoc.html" %}
+{% block content %}
+<style id="applicationStylesheet" type="text/css">
+
+	#PARTNERS_hw {
+		position: absolute;
+		width: 1366px;
+		height: 768px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#PARTNERS_hx {
+		position: absolute;
+		left: 531.781px;
+		top: 194.053px;
+		overflow: visible;
+		width: 304px;
+		white-space: nowrap;
+		line-height: 76.14447784423828px;
+		margin-top: -6.345373153686523px;
+		text-align: left;
+		font-family: Coves-Bold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 63.453731536865234px;
+		color: rgba(255,255,255,1);
+	}
+	#MEDICAL3 {
+		position: absolute;
+		width: 321px;
+		height: 321px;
+		left: 269px;
+		top: 341px;
+		overflow: visible;
+	}
+	#LIFESTYLE {
+		position: absolute;
+		width: 321px;
+		height: 321px;
+		left: 751px;
+		top: 341px;
+		overflow: visible;
+	}
+</style>
+
+	<img id="PARTNERS_hw" src="static/PARTNERS_hw.png" >
+	<div id="PARTNERS_hx">
+		<span>PARTNERS</span>
+	</div>
+	<a href="{{ url_for('medicalpartnersdoc') }}"> <img id="MEDICAL3" src="static/MEDICAL3.png" ></a>
+	<a href="{{ url_for('lifestyledoc') }}"> <img id="LIFESTYLE" src="static/LIFESTYLE.png"></a>
+
+{% endblock content %}

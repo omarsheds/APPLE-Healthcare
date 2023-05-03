@@ -1,0 +1,132 @@
+{% extends "layout.html" %}
+{% block content %}
+<style id="applicationStylesheet" type="text/css">
+	#LOGIN_bg {
+		position: relative;
+		width: 195px;
+		height: 40px;
+		
+		overflow: visible;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Home_2.html;
+		cursor: pointer;
+	}
+	.LOGIN_RECTANGLE {
+		position: absolute;
+		overflow: visible;
+		width: 195px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+	}
+	#BOOK_NOW {
+		position: absolute;
+		left: 19px;
+		top: -2px;
+		overflow: visible;
+		width: 159px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(255,255,255,1);
+	}
+</style>
+    <div style="top: 200px; left:420px;" style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;"  class="col-md-5">
+      <legend  style="font-family: Coves-Bold;font-weight: bold; font-size: 35px; color: white;top: -10px;" >Update Account Info</legend>
+	  <div class="media">
+        <img class="rounded-circle account-img" src="{{ image_file }}">
+        <div class="media-body">
+          <h2  style="font-family: Coves-Bold;font-weight: bold; font-size: 35px; color: white;" class="account-heading">{{ current_user.name }}</h2>
+          <small  style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;" >{{ current_user.email }}</small>
+        </div>
+      </div>
+	  
+        <form method="POST" action="" enctype="multipart/form-data">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                
+				
+				<div  style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;" class="form-group">
+                    {{ form.name.label(class="form-control-label") }}
+
+                    {% if form.name.errors %}
+                        {{ form.name(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.name.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.name(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+				
+                <div  style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;" class="form-group">
+                    {{ form.username.label(class="form-control-label") }}
+
+                    {% if form.username.errors %}
+                        {{ form.username(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.username.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.username(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div  style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;" class="form-group">
+                    {{ form.email.label(class="form-control-label") }}
+                    {% if form.email.errors %}
+                        {{ form.email(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.email.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.email(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+				 <div  style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;" class="form-group">
+                    {{ form.number.label(class="form-control-label") }}
+
+                    {% if form.number.errors %}
+                        {{ form.number(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.number.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.number(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div  style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;" class="form-group">
+                    {{ form.picture.label() }}
+                    {{ form.picture(class="form-control-file") }}
+                    {% if form.picture.errors %}
+                        {% for error in form.picture.errors %}
+                            <span class="text-danger">{{ error }}</span></br>
+                        {% endfor %}
+                    {% endif %}
+                </div>
+				<br>
+				<button style="background: transparent;border: none;"type="submit"><div  id="LOGIN_bg">
+		<svg class="LOGIN_RECTANGLE">
+			<rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="2px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="LOGIN_RECTANGLE" rx="20" ry="20" x="0" y="0" width="195" height="40">
+			</rect>
+		</svg>
+		<div id="BOOK_NOW">
+			<span>Update</span>
+		</div>
+	</div></button>
+            </fieldset>
+            
+        </form>
+    </div>
+{% endblock content %}

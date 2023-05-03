@@ -1,0 +1,59 @@
+{% extends "layout.html" %}
+{% block content %}
+<style id="applicationStylesheet" type="text/css">
+	
+	#location {
+		position: relative;
+		width: 23px;
+		height: 34px;
+
+		overflow: visible;
+	}
+	#icons_1831922 {
+		position: relative;
+		width: 23px;
+		height: 34px;
+
+		overflow: visible;
+	}
+	#percent {
+		position: relative;
+		width: 23px;
+		height: 34px;
+
+		overflow: visible;
+	}
+	</style>
+
+	
+    {% for userdoc in doctor.items %}
+
+		   <article style="top: 200px; left:420px;" class="col-md-4">
+          <img class="rounded-circle article-img" src="{{ url_for('static', filename='profile_pics/' + userdoc.image_file) }}">
+          <div class="media-body">
+            <div class="article-metadata">
+			<span style="font-family: Coves-Bold;font-weight: bold; font-size: 25px; color: white;">{{ userdoc.name }}</span>
+              <br>
+              <small  style="font-family: Coves-Bold;font-weight: bold; color: white;">{{userdoc.degree}}</small>
+            </div>
+            <p style="font-family: Coves-Bold;font-weight: bold; color: white; font-size: 17px;">	<img id="location" src="static/location.png" >   {{userdoc.clinic}}</p>
+			<p style="font-family: Coves-Bold;font-weight: bold; color: white;font-size: 17px;"><img id="icons_1831922" src="static/icons_1831922.png" >   {{userdoc.number}}</p>
+            <p style="font-family: Coves-Bold;font-weight: bold; color: white;font-size: 17px;" class="article-content"><img id="percent" src="static/percent.png" >   This clinic provides  <b>{{userdoc.discount}} %</b> discount </p>
+			<br>
+			<a  href="{{ url_for('appoint', user=userdoc.username) }}" ><img src="static/vensa-health-appointment-booking-button.png"></a>
+			</div>
+        </article>
+	
+    {% endfor %}
+    {% for page_num in doctor.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
+      {% if page_num %}
+        {% if doctor.page == page_num %}
+          <a style="position:relative;left:450px;top:700px;" class="btn btn-info mb-4" href="{{ url_for('doctors', page=page_num) }}">{{ page_num }}</a>
+        {% else %}
+          <a style="position:relative;left:450px;top:700px;" class="btn btn-outline-info mb-4" href="{{ url_for('doctors', page=page_num) }}">{{ page_num }}</a>
+        {% endif %}
+      {% else %}
+        ...
+      {% endif %}
+    {% endfor %}
+{% endblock content %}

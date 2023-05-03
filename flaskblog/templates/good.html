@@ -1,0 +1,127 @@
+  
+{% extends "layout.html" %}
+{% block content %}
+<style id="applicationStylesheet" type="text/css">
+#LOW_RISK {
+		position: absolute;
+		width: 1366px;
+		height: 768px;
+		background-color: rgba(0,0,0,0);
+		overflow: hidden;
+		--web-view-name: LOW RISK;
+		--web-view-id: LOW_RISK;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#BACKGROUND2 {
+		position: absolute;
+		width: 1366px;
+		height: 768px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#RESULT {
+		position: absolute;
+		left: 574.781px;
+		top: 194.053px;
+		overflow: visible;
+		width: 217px;
+		white-space: nowrap;
+		line-height: 76.14447784423828px;
+		margin-top: -6.345373153686523px;
+		text-align: left;
+		font-family: Coves-Bold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 63.453731536865234px;
+		color: rgba(255,255,255,1);
+	}
+	#MILD {
+		position: absolute;
+		width: 264px;
+		height: 264px;
+		left: 956px;
+		top: 345px;
+		overflow: visible;
+	}
+	#BOOK_NOW {
+		position: absolute;
+		width: 399px;
+		height: 50px;
+		left: 173px;
+		top: 550px;
+		overflow: visible;
+	}
+	#Rectangle_1 {
+		opacity: 0.86;
+	}
+	.Rectangle_1 {
+		position: absolute;
+		overflow: visible;
+		width: 399px;
+		height: 50px;
+		left: 0px;
+		top: 0px;
+	}
+	#BOOK_NOW_hs {
+		position: absolute;
+		left: 98px;
+		top: 5px;
+		overflow: visible;
+		width: 201px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 38px;
+		color: rgba(255,255,255,1);
+	}
+	#Good_News_with_your_current_co {
+		position: absolute;
+		left: 179px;
+		top: 384px;
+		overflow: visible;
+		width: 685px;
+		white-space: nowrap;
+		text-align: left;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: lighter;
+		font-size: 19px;
+		color: rgba(255,255,255,1);
+		letter-spacing: 0.3px;
+	}
+	</style>
+	<div id="LOW_RISK">
+	<img id="BACKGROUND2" src="static/BACKGROUND2.png" >
+	<div id="RESULT">
+		<span>RESULT</span>
+	</div>
+	<img id="MILD" src="static/MILD.png">
+	<a href="{{ url_for('doctors') }}"><div id="BOOK_NOW">
+		<svg class="Rectangle_1">
+			<rect fill="transparent" stroke="rgba(255,255,255,1)" stroke-width="3px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_1" rx="25" ry="25" x="0" y="0" width="399" height="50">
+			</rect>
+		</svg>
+		<div id="BOOK_NOW_hs">
+			<span>BOOK NOW</span>
+		</div>
+	</div></a>
+	<div id="Good_News_with_your_current_co">
+		<span></span><span style="font-style:normal;font-weight:bold;font-size:32px;"></span><span style="font-style:normal;font-weight:bold;font-size:25px;">Good News</span><span style="font-size:25px;"> with your current condition, We are glad to inform you <br/>our test found low risk of developing heart disease. Stay Healthy!.<br/>However, you can still have access to our medical professionals in <br/>case you need any type of consultation.</span>
+	</div>
+</div>
+	
+{% endblock content %}

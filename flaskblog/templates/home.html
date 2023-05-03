@@ -1,0 +1,316 @@
+{% extends "layout.html" %}
+{% block content %}
+    <style id="applicationStylesheet" type="text/css">
+	.mediaViewInfo {
+		--web-view-name: Home;
+		--web-view-id: Home;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	:root {
+		--web-view-ids: Home;
+	}
+	* {
+		margin: 0;
+		padding: 0;
+		box-sizing: border-box;
+		border: none;
+	}
+	#Home {
+		position: absolute;
+		width: 1366px;
+		height: 1441px;
+		background-color: rgba(0,0,0,0);
+		overflow: hidden;
+		--web-view-name: Home;
+		--web-view-id: Home;
+		--web-scale-on-resize: true;
+		--web-enable-deep-linking: true;
+	}
+	@keyframes fadein {
+	
+		0% {
+			opacity: 0;
+		}
+		100% {
+			opacity: 1;
+		}
+	
+	}
+	#backup_new1 {
+		position: absolute;
+		width: 1366px;
+		height: 768px;
+		left: 0px;
+		top: 0px;
+		overflow: visible;
+	}
+	#HEALTHCARE_SYSTEM {
+		position: absolute;
+		left: 128.953px;
+		top: 353.569px;
+		overflow: visible;
+		width: 1083px;
+		white-space: nowrap;
+		line-height: 135.2587127685547px;
+		margin-top: -11.271560668945312px;
+		text-align: left;
+		font-family: Coves-Bold;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 112.71559143066406px;
+		color: rgba(255,255,255,1);
+	}
+	.Rectangle_2 {
+		position: absolute;
+		overflow: visible;
+		width: 1366px;
+		height: 673px;
+		left: 0px;
+		top: 768px;
+	}
+	#BRIEF {
+		position: absolute;
+		left: 585px;
+		top: 802px;
+		overflow: visible;
+		width: 197px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 75px;
+		color: rgba(39,104,109,1);
+	}
+	#OBJECTIVE {
+		position: absolute;
+		width: 324px;
+		height: 421px;
+		left: 50px;
+		top: 971px;
+		overflow: visible;
+	}
+	#objective {
+		position: absolute;
+		width: 172px;
+		height: 172px;
+		left: 76px;
+		top: 32px;
+		overflow: visible;
+	}
+	#OBJECTIVE_ {
+		position: absolute;
+		left: 87px;
+		top: 0px;
+		overflow: visible;
+		width: 151px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(39,104,109,1);
+	}
+	#Our_system_provides_users_with {
+		position: absolute;
+		left: 0px;
+		top: 241px;
+		overflow: visible;
+		width: 325px;
+		height: 180px;
+		text-align: left;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(39,104,109,1);
+	}
+	#PARTNERS_bb {
+		position: absolute;
+		width: 324px;
+		height: 421px;
+		left: 535px;
+		top: 971px;
+		overflow: visible;
+	}
+	#Untitled_2 {
+		position: absolute;
+		width: 172px;
+		height: 172px;
+		left: 62px;
+		top: 32px;
+		overflow: visible;
+	}
+	#PARTNERS_bd {
+		position: absolute;
+		left: 76px;
+		top: 0px;
+		overflow: visible;
+		width: 145px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(39,104,109,1);
+	}
+	#Providing_a_variety_of_differe {
+		position: absolute;
+		left: 0px;
+		top: 241px;
+		overflow: visible;
+		width: 325px;
+		height: 180px;
+		text-align: left;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(39,104,109,1);
+	}
+	#PORTABILITY {
+		position: absolute;
+		width: 324px;
+		height: 421px;
+		left: 995px;
+		top: 971px;
+		overflow: visible;
+	}
+	#Untitled_1 {
+		position: absolute;
+		width: 172px;
+		height: 172px;
+		left: 76px;
+		top: 32px;
+		overflow: visible;
+	}
+	#PORTABILITY_bh {
+		position: absolute;
+		left: 73px;
+		top: 0px;
+		overflow: visible;
+		width: 179px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(39,104,109,1);
+	}
+	#Provide_a_24_7_available__medi {
+		position: absolute;
+		left: 0px;
+		top: 241px;
+		overflow: visible;
+		width: 325px;
+		height: 180px;
+		text-align: left;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: rgba(39,104,109,1);
+	}
+	#Group_3 {
+		position: absolute;
+		width: 1px;
+		height: 363.5px;
+		left: 447.5px;
+		top: 1028.5px;
+		overflow: visible;
+	}
+	.Line_3 {
+		overflow: visible;
+		position: absolute;
+		width: 3px;
+		height: 363.5px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+	#Group_5 {
+		position: absolute;
+		width: 1px;
+		height: 363.5px;
+		left: 918.5px;
+		top: 1028.5px;
+		overflow: visible;
+	}
+	.Line_5 {
+		overflow: visible;
+		position: absolute;
+		width: 3px;
+		height: 363.5px;
+		left: 0px;
+		top: 0px;
+		transform: matrix(1,0,0,1,0,0);
+	}
+</style>
+<div id="Home">
+	
+	<div id="HEALTHCARE_SYSTEM">
+		<span>HEALTHCARE</span><span> </span><span style="font-family:Coves-Light;">SYSTEM</span>
+	</div>
+		<svg class="Rectangle_2">
+		<rect fill="rgba(255,255,255,1)" stroke="rgba(112,112,112,1)" stroke-width="1px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Rectangle_2" rx="0" ry="0" x="0" y="0" width="1366" height="673">
+		</rect>
+	</svg>
+	<div id="BRIEF">
+		<span>BRIEF</span>
+	</div>
+	<div id="OBJECTIVE">
+		<img id="objective" src="static/objective.png" >
+		<div id="OBJECTIVE_">
+			<span>OBJECTIVE</span>
+		</div>
+		<div id="Our_system_provides_users_with">
+			<span>Our system provides users with checkups for the early detection of Coronary Heart Disease (CHD).</span>
+		</div>
+	</div>
+	<div id="PARTNERS_bb">
+		<img id="Untitled_2" src="static/Untitled_2.png" >
+		<div id="PARTNERS_bd">
+			<span>PARTNERS</span>
+		</div>
+		<div id="Providing_a_variety_of_differe">
+			<span>Providing a variety of different partners in both medical and lifestyle fields. </span>
+		</div>
+	</div>
+	<div id="PORTABILITY">
+		<img id="Untitled_1" src="static/Untitled_1.png" >
+		<div id="PORTABILITY_bh">
+			<span>PORTABILITY</span>
+		</div>
+		<div id="Provide_a_24_7_available__medi">
+			<span>Provide a 24/7 available  medical checkup service no matter where you are.    </span>
+		</div>
+	</div>
+	<div id="Group_3">
+		<svg class="Line_3" viewBox="0 0 3 363.5">
+			<path fill="transparent" stroke="rgba(31,97,103,1)" stroke-width="3px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Line_3" d="M 0 0 L 0 363.5">
+			</path>
+		</svg>
+	</div>
+	<div id="Group_5">
+		<svg class="Line_5" viewBox="0 0 3 363.5">
+			<path fill="transparent" stroke="rgba(31,97,103,1)" stroke-width="3px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="Line_5" d="M 0 0 L 0 363.5">
+			</path>
+		</svg>
+	</div>
+</div>
+    {% for page_num in posts.iter_pages(left_edge=1, right_edge=1, left_current=1, right_current=2) %}
+      {% if page_num %}
+        {% if posts.page == page_num %}
+          <a class="btn btn-info mb-4" href="{{ url_for('home', page=page_num) }}">{{ page_num }}</a>
+        {% else %}
+          <a class="btn btn-outline-info mb-4" href="{{ url_for('home', page=page_num) }}">{{ page_num }}</a>
+        {% endif %}
+      {% else %}
+        ...
+      {% endif %}
+    {% endfor %}
+{% endblock content %}

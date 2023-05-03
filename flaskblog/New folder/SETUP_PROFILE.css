@@ -1,0 +1,448 @@
+.mediaViewInfo {
+	--web-view-name: SETUP PROFILE;
+	--web-view-id: SETUP_PROFILE;
+	--web-scale-on-resize: true;
+	--web-center-horizontally: true;
+	--web-center-vertically: true;
+	--web-enable-deep-linking: true;
+	--web-page-font: COVES;
+}
+:root {
+	--web-view-ids: SETUP_PROFILE;
+}
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	border: none;
+}
+#SETUP_PROFILE {
+	position: absolute;
+	transform: translateX(-50%) translateY(-50%);
+	left: 50%;
+	top: 50%;
+	width: 1366px;
+	height: 848px;
+	font-family: COVES;
+	background-color: rgba(0,0,0,0);
+	overflow: hidden;
+	--web-view-name: SETUP PROFILE;
+	--web-view-id: SETUP_PROFILE;
+	--web-scale-on-resize: true;
+	--web-center-horizontally: true;
+	--web-center-vertically: true;
+	--web-enable-deep-linking: true;
+	--web-page-font: COVES;
+}
+@keyframes fadein {
+
+	0% {
+		opacity: 0;
+	}
+	100% {
+		opacity: 1;
+	}
+
+}
+#backup_new1 {
+	position: absolute;
+	width: 1508px;
+	height: 848px;
+	left: -71px;
+	top: 0px;
+	overflow: visible;
+}
+#SUBMIT {
+	position: absolute;
+	width: 280px;
+	height: 52px;
+	left: 543px;
+	top: 738px;
+	overflow: visible;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Home_2.html;
+	cursor: pointer;
+}
+.textbox_copy_6 {
+	position: absolute;
+	overflow: visible;
+	width: 282px;
+	height: 54px;
+	left: 0px;
+	top: 0px;
+}
+#SUBMIT_cr {
+	position: absolute;
+	left: 89.619px;
+	top: 10.63px;
+	overflow: visible;
+	width: 102px;
+	white-space: nowrap;
+	text-align: left;
+	font-family: Coves-Bold, COVES;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 30px;
+	color: rgba(255,255,255,1);
+}
+#BODY {
+	position: absolute;
+	width: 913px;
+	height: 341px;
+	left: 212px;
+	top: 312px;
+	overflow: visible;
+}
+#UPLOAD {
+	position: absolute;
+	width: 280px;
+	height: 341px;
+	left: 633px;
+	top: 0px;
+	overflow: visible;
+}
+.textbox_copy_6_cu {
+	position: absolute;
+	overflow: visible;
+	width: 282px;
+	height: 54px;
+	left: 0px;
+	top: 289px;
+}
+#UPLOAD_PICTURE {
+	position: absolute;
+	left: 79.619px;
+	top: 306.63px;
+	overflow: visible;
+	width: 173px;
+	white-space: nowrap;
+	line-height: 25.76961326599121px;
+	margin-top: -2.1474666595458984px;
+	text-align: left;
+	font-family: Coves-Bold, COVES;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 21.474679946899414px;
+	color: rgba(255,255,255,1);
+}
+.Shape_1 {
+	position: absolute;
+	overflow: visible;
+	width: 1.33px;
+	height: 26.65px;
+	left: 69.39px;
+	top: 304.27px;
+}
+#img_234957 {
+	position: absolute;
+	width: 28px;
+	height: 28px;
+	left: 30px;
+	top: 304px;
+	overflow: visible;
+}
+#ID22753729 {
+	position: absolute;
+	width: 267px;
+	height: 267px;
+	left: 8px;
+	top: 0px;
+	overflow: visible;
+}
+#FIRST_NAME {
+	position: absolute;
+	width: 312px;
+	height: 58px;
+	left: 0px;
+	top: 35px;
+	overflow: visible;
+}
+#Rectangle_1 {
+	opacity: 0.86;
+}
+.Rectangle_1 {
+	position: absolute;
+	overflow: visible;
+	width: 312px;
+	height: 58px;
+	left: 0px;
+	top: 0px;
+}
+#FIRST_NAME_c {
+	position: absolute;
+	left: 37px;
+	top: 16px;
+	overflow: visible;
+	width: 135px;
+	white-space: nowrap;
+	line-height: 25.76961326599121px;
+	margin-top: -0.38480663299560547px;
+	text-align: left;
+	font-family: Coves-Bold, COVES;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(29,97,103,1);
+}
+#LAST_NAME {
+	position: absolute;
+	width: 312px;
+	height: 58px;
+	left: 0px;
+	top: 113px;
+	overflow: visible;
+}
+#Rectangle_1_c {
+	opacity: 0.86;
+}
+.Rectangle_1_c {
+	position: absolute;
+	overflow: visible;
+	width: 312px;
+	height: 58px;
+	left: 0px;
+	top: 0px;
+}
+#LAST_NAME_c {
+	position: absolute;
+	left: 37px;
+	top: 16px;
+	overflow: visible;
+	width: 130px;
+	white-space: nowrap;
+	line-height: 25.76961326599121px;
+	margin-top: -0.38480663299560547px;
+	text-align: left;
+	font-family: Coves-Bold, COVES;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(29,97,103,1);
+}
+#MOBILE_NUMBER {
+	position: absolute;
+	width: 312px;
+	height: 58px;
+	left: 0px;
+	top: 191px;
+	overflow: visible;
+}
+#Rectangle_1_da {
+	opacity: 0.86;
+}
+.Rectangle_1_da {
+	position: absolute;
+	overflow: visible;
+	width: 312px;
+	height: 58px;
+	left: 0px;
+	top: 0px;
+}
+#MOBILE_NUMBER_c {
+	position: absolute;
+	left: 37px;
+	top: 16px;
+	overflow: visible;
+	width: 193px;
+	white-space: nowrap;
+	line-height: 25.76961326599121px;
+	margin-top: -0.38480663299560547px;
+	text-align: left;
+	font-family: Coves-Bold, COVES;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(29,97,103,1);
+}
+#NATIONAL_ID {
+	position: absolute;
+	width: 312px;
+	height: 58px;
+	left: 0px;
+	top: 269px;
+	overflow: visible;
+}
+#Rectangle_1_db {
+	opacity: 0.86;
+}
+.Rectangle_1_db {
+	position: absolute;
+	overflow: visible;
+	width: 312px;
+	height: 58px;
+	left: 0px;
+	top: 0px;
+}
+#NATIONAL_ID_da {
+	position: absolute;
+	left: 37px;
+	top: 16px;
+	overflow: visible;
+	width: 152px;
+	white-space: nowrap;
+	line-height: 25.76961326599121px;
+	margin-top: -0.38480663299560547px;
+	text-align: left;
+	font-family: Coves-Bold, COVES;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(29,97,103,1);
+}
+#HEADER {
+	position: absolute;
+	width: 1288.992px;
+	height: 235.053px;
+	left: 24px;
+	top: 25px;
+	overflow: visible;
+}
+#HOME {
+	position: absolute;
+	left: 613px;
+	top: 41px;
+	overflow: visible;
+	width: 71px;
+	white-space: nowrap;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: Home_2.html;
+	cursor: pointer;
+	line-height: 30.000001907348633px;
+	margin-top: -2.5000009536743164px;
+	text-align: left;
+	font-family: Coves-Bold, COVES;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(255,255,255,1);
+}
+#HEALTHCARE_SERVICES {
+	position: absolute;
+	left: 717px;
+	top: 41px;
+	overflow: visible;
+	width: 266px;
+	white-space: nowrap;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: HEALTHCARE_SERVICES.html;
+	cursor: pointer;
+	line-height: 30.000001907348633px;
+	margin-top: -2.5000009536743164px;
+	text-align: left;
+	font-family: Coves-Bold, COVES;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(255,255,255,1);
+}
+.Shape_1_copy {
+	position: absolute;
+	overflow: visible;
+	width: 1px;
+	height: 35px;
+	left: 998.99px;
+	top: 36px;
+}
+.Shape_1_copy_3 {
+	position: absolute;
+	overflow: visible;
+	width: 1px;
+	height: 35px;
+	left: 699.35px;
+	top: 36px;
+}
+#PARTNERS {
+	position: absolute;
+	left: 1016.991px;
+	top: 41px;
+	overflow: visible;
+	width: 120px;
+	white-space: nowrap;
+	line-height: 30.000001907348633px;
+	margin-top: -2.5000009536743164px;
+	text-align: left;
+	font-family: Coves-Bold, COVES;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(255,255,255,1);
+}
+.Shape_1_copy_2 {
+	position: absolute;
+	overflow: visible;
+	width: 1px;
+	height: 35px;
+	left: 1152.99px;
+	top: 36px;
+}
+#ABOUT_US {
+	position: absolute;
+	left: 1170.992px;
+	top: 41px;
+	overflow: visible;
+	width: 119px;
+	white-space: nowrap;
+	line-height: 30.000001907348633px;
+	margin-top: -2.5000009536743164px;
+	text-align: left;
+	font-family: Coves-Bold, COVES;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(255,255,255,1);
+}
+#SETUP_PROFILE_dj {
+	position: absolute;
+	left: 437.192px;
+	top: 169.053px;
+	overflow: visible;
+	width: 445px;
+	white-space: nowrap;
+	line-height: 76.14447784423828px;
+	margin-top: -6.345373153686523px;
+	text-align: left;
+	font-family: Coves-Bold, COVES;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 63.453731536865234px;
+	color: rgba(255,255,255,1);
+}
+#LOGOUT {
+	position: absolute;
+	left: 161.452px;
+	top: 41px;
+	overflow: visible;
+	width: 101px;
+	white-space: nowrap;
+	--web-animation: fadein 0.3s ease-out;
+	--web-action-type: page;
+	--web-action-target: LOGIN.html;
+	cursor: pointer;
+	line-height: 30.000001907348633px;
+	margin-top: -2.5000009536743164px;
+	text-align: left;
+	font-family: Coves-Bold, COVES;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 25px;
+	color: rgba(255,255,255,1);
+}
+.Shape_1_copy_4 {
+	position: absolute;
+	overflow: visible;
+	width: 1px;
+	height: 35px;
+	left: 133.31px;
+	top: 36px;
+}
+#ID22753729_dm {
+	position: absolute;
+	width: 106px;
+	height: 106px;
+	left: 0px;
+	top: 0px;
+	overflow: visible;
+}

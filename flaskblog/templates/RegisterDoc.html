@@ -1,0 +1,175 @@
+{% extends "layoutDoc.html" %}
+{% block content %}
+<style id="applicationStylesheet" type="text/css">
+	#LOGIN_bg {
+		position: relative;
+		width: 195px;
+		height: 40px;
+		
+		overflow: visible;
+		--web-animation: fadein 0.3s ease-out;
+		--web-action-type: page;
+		--web-action-target: Home_2.html;
+		cursor: pointer;
+	}
+	.LOGIN_RECTANGLE {
+		position: absolute;
+		overflow: visible;
+		width: 195px;
+		height: 40px;
+		left: 0px;
+		top: 0px;
+	}
+	#BOOK_NOW {
+		position: absolute;
+		left: 19px;
+		top: -2px;
+		overflow: visible;
+		width: 159px;
+		white-space: nowrap;
+		text-align: center;
+		font-family: Coves;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 30px;
+		color: #1d807d;
+	}
+</style>
+       <div style="top: 200px; left:420px;" style="font-family: Coves-Bold;font-weight: bold; font-size: 22px; color: white;"  class="col-md-4">
+        <form method="POST" action="">
+            {{ form.hidden_tag() }}
+            <fieldset class="form-group">
+                <legend style="font-family: Coves-Bold;font-weight: bold;color: #1d807d;" >Join Today</legend>
+                <div style="font-family: Coves-Bold;font-weight: bold;color: #1d807d;"class="form-group">
+                    {{ form.username.label(class="form-control-label") }}
+
+                    {% if form.username.errors %}
+                        {{ form.username(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.username.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.username(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+				 <div style="font-family: Coves-Bold;font-weight: bold;color: #1d807d;" class="form-group">
+                    {{ form.name.label(class="form-control-label") }}
+
+                    {% if form.name.errors %}
+                        {{ form.name(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.name.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.name(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+				<div style="font-family: Coves-Bold;font-weight: bold;color: #1d807d;" class="form-group">
+                    {{ form.number.label(class="form-control-label") }}
+
+                    {% if form.number.errors %}
+                        {{ form.number(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.number.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.number(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div style="font-family: Coves-Bold;font-weight: bold;color: #1d807d;" class="form-group">
+                    {{ form.email.label(class="form-control-label") }}
+                    {% if form.email.errors %}
+                        {{ form.email(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.email.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.email(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+				<div style="font-family: Coves-Bold;font-weight: bold;color: #1d807d;" class="form-group">
+                    {{ form.clinic.label(class="form-control-label") }}
+                    {% if form.clinic.errors %}
+                        {{ form.clinic(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.clinic.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.clinic(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+				<div style="font-family: Coves-Bold;font-weight: bold;color: #1d807d;" class="form-group">
+                    {{ form.degree.label(class="form-control-label") }}
+                    {% if form.degree.errors %}
+                        {{ form.degree(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.degree.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.degree(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div style="font-family: Coves-Bold;font-weight: bold;color: #1d807d;" class="form-group">
+                    {{ form.password.label(class="form-control-label") }}
+                    {% if form.password.errors %}
+                        {{ form.password(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.password.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.password(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+                <div style="font-family: Coves-Bold;font-weight: bold;color: #1d807d;" class="form-group">
+                    {{ form.confirm_password.label(class="form-control-label") }}
+                    {% if form.confirm_password.errors %}
+                        {{ form.confirm_password(class="form-control form-control-lg is-invalid") }}
+                        <div class="invalid-feedback">
+                            {% for error in form.confirm_password.errors %}
+                                <span>{{ error }}</span>
+                            {% endfor %}
+                        </div>
+                    {% else %}
+                        {{ form.confirm_password(class="form-control form-control-lg") }}
+                    {% endif %}
+                </div>
+						<br><br>
+				<button style="background: transparent;border: none;"type="submit"><div  id="LOGIN_bg">
+		<svg class="LOGIN_RECTANGLE">
+			<rect fill="transparent" stroke="#1d807d" stroke-width="2px" stroke-linejoin="miter" stroke-linecap="butt" stroke-miterlimit="4" shape-rendering="auto" id="LOGIN_RECTANGLE" rx="20" ry="20" x="0" y="0" width="195" height="40">
+			</rect>
+		</svg>
+		<div id="BOOK_NOW">
+			<span>Register</span>
+		</div>
+	</div></button>
+	    <div style="font-family: Coves-Bold;font-weight: bold;color: #1d807d;" >
+        <small >
+            Already Have A Doctor Account? <a class="ml-2" href="{{ url_for('loginDoc') }}">Sign In</a>
+        </small>
+    </div>
+	 <div style="font-family: Coves-Bold;font-weight: bold;color: #1d807d;" >
+        <small >
+           Are you a patient? <a class="ml-2" href="{{ url_for('register') }}">You can sign up as apatient HERE!</a>
+        </small>
+    </div>
+            </fieldset>
+            
+        </form>
+    </div>
+
+{% endblock content %}
