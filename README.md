@@ -26,6 +26,6 @@ Technical Details:
 
 2- UI/UX design was done by Adobe XD tool
 
-3- Front-end was developed in HTML , CSS
+3- Front-end was developed in HTML , CSS , JavaScript
 
 4- Database was implemented using SQLite
